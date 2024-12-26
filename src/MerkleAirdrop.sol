@@ -42,4 +42,12 @@ contract MerkleAirdrop {
         s_hasClaimed[account] = true;
         i_airdropToken.safeTransfer(account, amount);
     }
+
+    function getMerkleRoot() public view returns (bytes32) {
+        return i_merkleRoot;
+    }
+
+    function getAirdropToken() public view returns (IERC20) {
+        return i_airdropToken;
+    }
 }
