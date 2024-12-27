@@ -12,7 +12,7 @@ contract MerkleAirdropTest is ZkSyncChainChecker, Test {
     BagelToken public token;
     DeployMerkleAirdrop public deployer;
 
-    bytes32 public root = 0xd32c1d219a66007bb48635faf9c633c9782ce758245314bae61b6500f39220be;
+    bytes32 public root = 0xaa5d581231e596618465a56aa0f5870ba6e20785fe436d5bfb82b08662ccc7c4;
 
     address user;
     uint256 userPrivKey;
@@ -30,8 +30,8 @@ contract MerkleAirdropTest is ZkSyncChainChecker, Test {
     uint256 AMOUNT_TO_CLAIM = 25e18;
     uint256 AMOUNT_TO_SEND = 4 * AMOUNT_TO_CLAIM;
 
-    bytes32 proofOne = 0xbaa072cd3aa185139d07facad6010bee6a3195bdf0bcaf20d16b94883a4b09a2;
-    bytes32 proofTwo = 0xd87b1392cbd4e0c97beed9cb0a42176fe7803404c0be43f39363033c1e89ac62;
+    bytes32 proofOne = 0x0fd7c981d39bece61f7499702bf59b3114a90e66b51ba2c53abdf7b62986c00a;
+    bytes32 proofTwo = 0xe5ebd1e1b5a5478a944ecab36a9a954ac3b6b8216875f6524caa7a1d87096576;
 
     bytes32[] PROOF = [proofOne, proofTwo];
 
